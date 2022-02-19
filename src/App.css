@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f7f7f7;
+    font-family: 'Arial';
+}
+:root{
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.nav-container{
+    text-align: center;
+    background-color: cadetblue;
+}
+.expense-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0px;
+    padding: 20px;
+    height: 130px;
+    width: max-content;
+}
+.income{
+    border-right: 5px red solid;
+    padding-right: 10px;
+}
+.money-income{
+    color: #2ecc71;
+}
+ul{
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 30px;
+}
+.expense-items{
+    float: right;
+    margin-right: 500px;
+    margin-top: -50px;
+}
+.each-expense{
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    margin-top: 20px;
+    padding: 20px;
+    width:300px;
+}
+.money-expense{
+    color: red;
+}
+.expense{
+    padding-left: 10px;
+}
+label{
+    margin-top: 10px;
+    font-size: 20px;
+}
+input[type='text']{
+    width: 300px;
+    padding: 5px;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+}
+.transaction-btn{
+    color: #fff;
+    background-color:rgb(182, 41, 88);
+    border: none;
+    font-size: 20px;
+    padding: 15px 5px;
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom:30px ;
+    cursor: pointer;
+}
+.transaction-btn:focus{
+    outline: none;
+}
+.grid{
+    display: grid !important;
+    margin-left: 20px;
+    grid-template-columns: repeat(1, 2fr);
+}
+/* Button Styles */
+.edit-btn{
+    background-color: rgb(75, 202, 245);
+    padding: 5px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.delete-btn{
+    background-color: red;
+    padding: 5px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.edit-btn, .delete-btn:focus{
+    outline: none;
+}
